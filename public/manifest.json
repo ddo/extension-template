@@ -1,0 +1,43 @@
+{
+    "name": "ExtensionName",
+    "description": "ExtensionDescription",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "icons": {
+        "16": "logo/16.png",
+        "48": "logo/48.png",
+        "128": "logo/icon.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "match_about_blank": true,
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["img/spin.gif", "img/audio.png", "logo/48.png"],
+            "matches": ["*://*/*"]
+        }
+    ],
+    "action": {
+        "default_title": "ExtensionPopup",
+        "default_popup": "popup.html",
+        "default_icon": "logo/icon.png"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "*://ddict.me/*",
+        "*://*.ddict.me/*"
+    ]
+}
