@@ -5,11 +5,9 @@
 </template>
 
 <script>
-import Helper from '@/models/helper.js'
-
 export default {
     data() {
-        return { }
+        return {}
     },
 }
 </script>
