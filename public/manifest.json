@@ -33,11 +33,6 @@
         "default_icon": "logo/icon.png"
     },
     "options_page": "options.html",
-    "permissions": [
-        "storage"
-    ],
-    "host_permissions": [
-        "*://ddict.me/*",
-        "*://*.ddict.me/*"
-    ]
+    "permissions": ["storage"],
+    "host_permissions": ["*://ddict.me/*", "*://*.ddict.me/*"]
 }
