@@ -9,7 +9,7 @@ import styles from 'rollup-plugin-styles'
 
 export default [
     {
-        input: 'src/background/main.js',
+        input: 'src/pages/background/main.js',
         output: {
             file: 'dist/background.js',
             format: 'es',
@@ -17,7 +17,7 @@ export default [
         plugins: [resolve(), uglify()],
     },
     {
-        input: 'src/content/main.js',
+        input: 'src/pages/content/main.js',
         output: {
             file: 'dist/content.js',
             format: 'es',
