@@ -1,18 +1,23 @@
 # extension-template
+
 Browser Extension Template
 
 ---
 
-Develop with ``vue, tailwindcss, daisyui``
+Develop with `vue, tailwindcss, daisyui`
 
-Built by ``vite & rollup``
+Built by `vite & rollup`
 
 ## Usage
 
-- Remove unused parts
-- Rename Extension Info:
-	- ``packate.json``
-	- ``public/manifest.json``
+-   Remove unused parts
+-   Rename Extension Info: - `package.json` - `public/manifest.json`
+
+## Build
+
+```sh
+yarn dev
+```
 
 ## Build
 
@@ -20,4 +25,4 @@ Built by ``vite & rollup``
 yarn build
 ```
 
-then load the ``dist`` folder
+then load the `dist` folder

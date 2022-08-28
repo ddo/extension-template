@@ -17,8 +17,8 @@
             "all_frames": true,
             "match_about_blank": true,
             "matches": ["<all_urls>"],
-            "js": ["content.js"],
-            "css": ["content.css"]
+            "js": ["content/main.js"],
+            "css": ["content/index.css"]
         }
     ],
     "web_accessible_resources": [

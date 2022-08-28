@@ -18,8 +18,15 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
+                background: resolve(
+                    __dirname,
+                    './src/pages/background/main.js'
+                ),
                 popup: resolve(__dirname, './popup.html'),
                 options: resolve(__dirname, './options.html'),
+            },
+            output: {
+                entryFileNames: '[name].js',
             },
         },
     },

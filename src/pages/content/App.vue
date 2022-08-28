@@ -1,5 +1,7 @@
+<script setup></script>
+
 <template>
-    <h1>Extension Content</h1>
+    <h1 class="extension">Extension Content</h1>
 </template>
 
 <script>
@@ -10,6 +12,7 @@ export default {
             data: null,
         }
     },
+    mounted() {},
 }
 </script>
 <style>
