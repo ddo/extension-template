@@ -2,6 +2,9 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
+
 export default defineConfig({
     resolve: {
         alias: {
@@ -10,8 +13,16 @@ export default defineConfig({
     },
     plugins: [vue()],
     publicDir: false,
+    css: {
+        postcss: {
+            plugins: [
+                tailwindcss('./tailwind-content.config.js'),
+                autoprefixer,
+            ],
+        },
+    },
     build: {
-        outDir: 'dist/content',
+        outDir: './dist/content',
         rollupOptions: {
             input: {
                 content: resolve(__dirname, './src/pages/content/main.js'),

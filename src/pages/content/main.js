@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import './index.css'
 
 const div = document.createElement('section')
 div.id = 'unique-app-id'

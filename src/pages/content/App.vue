@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <h1 class="extension">Extension Content</h1>
+    <button class="extension dd-btn">Extension Content</button>
 </template>
 
 <script>
@@ -12,7 +12,9 @@ export default {
             data: null,
         }
     },
-    mounted() {},
+    mounted() {
+        console.log('content scripts')
+    },
 }
 </script>
 <style>
