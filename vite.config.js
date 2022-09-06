@@ -16,6 +16,7 @@ export default defineConfig({
         }),
     ],
     build: {
+        emptyOutDir: false,
         rollupOptions: {
             input: {
                 background: resolve(
