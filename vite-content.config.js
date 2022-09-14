@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
@@ -11,7 +11,7 @@ export default defineConfig({
             '@': resolve(__dirname, 'src'),
         },
     },
-    plugins: [vue()],
+    plugins: [svelte()],
     publicDir: false,
     css: {
         postcss: {

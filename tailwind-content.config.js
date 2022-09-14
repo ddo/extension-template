@@ -1,5 +1,5 @@
 module.exports = {
-    content: ['./src/pages/content/**/*.{vue,js,ts,jsx,tsx}'],
+    content: ['./src/**/*.{vue,svelte,js,ts,jsx,tsx}'],
     prefix: 'dd-',
     theme: {
         extend: {},

@@ -1,10 +1,12 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import './index.css'
-
 const div = document.createElement('section')
 div.id = 'unique-app-id'
 document.body.appendChild(div)
 
-const app = createApp(App)
-app.mount('#unique-app-id')
+import App from './App.svelte'
+import './index.css'
+
+const app = new App({
+    target: document.getElementById('unique-app-id'),
+})
+
+export default app
