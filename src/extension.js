@@ -7,7 +7,6 @@ export default {
     getURL,
     sendMsg,
     onMsg,
-    detectLanguage,
     setPopupBadge,
 }
 

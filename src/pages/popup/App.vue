@@ -1,12 +1,13 @@
 <script setup>
-import Header from '@/components/header.vue'
-import Footer from '@/components/footer.vue'
+import Splash from '@/views/Splash.vue'
+
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
     <Header />
-    <h1>Popup</h1>
-    <button class="btn btn-lg">Extension Popup</button>
+    <Splash />
     <Footer />
 </template>
 
