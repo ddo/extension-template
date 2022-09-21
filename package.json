@@ -10,7 +10,8 @@
         "build": "rm -r dist && vite build && vite build -c vite-content.config.js"
     },
     "dependencies": {
-        "daisyui": "2"
+        "daisyui": "2",
+        "page": "^1.11.6"
     },
     "devDependencies": {
         "@sveltejs/vite-plugin-svelte": "^1.0.5",
