@@ -7,13 +7,12 @@ export default {
     getURL,
     sendMsg,
     onMsg,
-    detectLanguage,
     setPopupBadge,
 }
 
 function closeTab() {
-    ex.tabs.getCurrent(function(tab) {
-        ex.tabs.remove(tab.id, function() {})
+    ex.tabs.getCurrent(function (tab) {
+        ex.tabs.remove(tab.id, function () {})
     })
 }
 
