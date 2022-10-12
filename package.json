@@ -6,8 +6,8 @@
     "license": "UNLICENSED",
     "private": true,
     "scripts": {
-        "dev": "rm -r dist && vite build --watch & vite build -w -c vite-content.config.js",
-        "build": "rm -r dist && vite build && vite build -c vite-content.config.js"
+        "dev": "rm -rf dist && vite build --watch & vite build -w -c vite-content.config.js",
+        "build": "rm -rf dist && vite build && vite build -c vite-content.config.js"
     },
     "dependencies": {
         "daisyui": "2",
