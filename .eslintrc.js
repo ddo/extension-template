@@ -2,15 +2,19 @@ module.exports = {
     env: {
         commonjs: true,
         es6: true,
+        browser: true,
     },
     extends: ['eslint:recommended', 'plugin:vue/vue3-essential'],
     globals: {
-        google: 'readonly',
-        firebase: 'readonly',
-        console: 'readonly',
+        chrome: 'readonly',
+        browser: 'readonly',
     },
     parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 2019,
+        sourceType: 'module',
     },
-    rules: {},
+    rules: {
+        'no-console': 1,
+        'vue/multi-word-component-names': 0,
+    },
 }

@@ -10,7 +10,6 @@
 import Ex from '@/extension'
 
 export default {
-    name: 'Content',
     data() {
         return {
             data: null,
