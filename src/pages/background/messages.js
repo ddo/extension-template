@@ -1,5 +1,3 @@
-const ex = chrome || browser
-
 export default {
     on,
 }

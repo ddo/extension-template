@@ -26,7 +26,7 @@ const routes = [
 ]
 
 // callback for each route
-function init(base = '/', callback) {
+function init(callback) {
     routes.forEach((route) => {
         page(route.path, () => {
             callback(route)

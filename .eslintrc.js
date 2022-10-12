@@ -1,16 +1,26 @@
 module.exports = {
     env: {
-        commonjs: true,
         es6: true,
+        browser: true,
+        node: true,
     },
-    extends: ['eslint:recommended', 'plugin:vue/vue3-essential'],
+    extends: ['eslint:recommended'],
+    plugins: ['svelte3'],
     globals: {
-        google: 'readonly',
-        firebase: 'readonly',
-        console: 'readonly',
+        chrome: 'readonly',
+        browser: 'readonly',
     },
+    overrides: [
+        {
+            files: ['**/*.svelte'],
+            processor: 'svelte3/svelte3',
+        },
+    ],
     parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 2019,
+        sourceType: 'module',
     },
-    rules: {},
+    rules: {
+        'no-console': 1,
+    },
 }
