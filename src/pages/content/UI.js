@@ -11,13 +11,10 @@ function init() {
     const wrapper = document.createElement('section')
     document.body.appendChild(wrapper)
 
-    const styleURL = Ex.getURL('/content/index.css')
-    const link = document.createElement('link')
-    link.rel = 'stylesheet'
-    link.href = styleURL
-
     // shadow DOM
     const shadow = wrapper.attachShadow({ mode: 'open' })
+
+    const link = createStyleLink('/content/index.css')
     shadow.appendChild(link)
 
     const app = new App({
@@ -25,4 +22,14 @@ function init() {
     })
 
     return app
+}
+
+function createStyleLink(path) {
+    path = Ex.getURL(path)
+
+    const link = document.createElement('link')
+    link.rel = 'stylesheet'
+    link.href = path
+
+    return link
 }

@@ -19,7 +19,7 @@
     }
 </script>
 
-<button on:click={test} class="extension dd-btn">Extension Content</button>
+<button on:click={test} class="extension btn">Extension Content</button>
 <Counter />
 
 <style>
