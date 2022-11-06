@@ -1,3 +1,4 @@
+import '@/pages/content/index.css'
 const ex = chrome || browser
 
 import Helper from '@/helper'
@@ -11,5 +12,5 @@ console.log('background')
 void 0
 ;(async () => {
     await Helper.wait(15000)
-    Ex.openTab('https://ddict.me/')
+    // Ex.openTab('https://ddict.me/')
 })()
