@@ -1,10 +1,3 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import './index.css'
+import UI from './ui'
 
-const div = document.createElement('section')
-div.id = 'unique-app-id'
-document.body.appendChild(div)
-
-const app = createApp(App)
-app.mount('#unique-app-id')
+UI.init()

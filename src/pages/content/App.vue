@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-    <button @click="test" class="extension dd-btn">
+    <button @click="test" class="extension btn">
         Extension Content Scripts
     </button>
 </template>

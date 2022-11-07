@@ -17,13 +17,17 @@
             "all_frames": true,
             "match_about_blank": true,
             "matches": ["<all_urls>"],
-            "js": ["content/main.js"],
-            "css": ["content/index.css"]
+            "js": ["content/main.js"]
         }
     ],
     "web_accessible_resources": [
         {
-            "resources": ["img/spin.gif", "img/audio.png", "logo/48.png"],
+            "resources": [
+                "content/index.css",
+                "img/spin.gif",
+                "img/audio.png",
+                "logo/48.png"
+            ],
             "matches": ["*://*/*"]
         }
     ],
