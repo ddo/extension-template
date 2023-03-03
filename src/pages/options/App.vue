@@ -1,5 +1,5 @@
 <script setup>
-import Footer from '@/components/footer.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
@@ -7,12 +7,8 @@ import Footer from '@/components/footer.vue'
         <div class="flex-col hero-content">
             <header class="text-center">
                 <img class="inline" src="/logo/icon.png" alt="" />
-                <h1 class="mb-1 text-4xl font-bold">
-                    Extension
-                </h1>
-                <p class="mb-5">
-                    settings
-                </p>
+                <h1 class="mb-1 text-4xl font-bold">Extension</h1>
+                <p class="mb-5">settings</p>
             </header>
 
             <Footer />
